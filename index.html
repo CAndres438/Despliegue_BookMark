@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/style.css">
+
+    <title>Reto 1 | Bookmark landing page</title>
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+
+            <img src="./images/logo-bookmark.svg" alt="logo bookmark con el nombre" id="imglog"/>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+
+                <ul class="navbar-nav ulNav text-dark me-auto mb-2 mb-lg-0 ">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link n" href="#f" id="a1">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link n" href="#p" id="a2">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link n" href="#c" id="a3">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link n" href="#" id="a4">LOGIN</a>
+                    </li>
+                
+                </ul>
+            
+                <ul class="navRedes">
+                    <li class="nav-item">
+                        <a class="nav-link n" href="https://twitter.com/?lang=es"><img src="./images/icon-twitter.svg" alt=""> </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/Daaluempresa"><img src="../images/icon-facebook.svg" alt=""> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Introducción-->
+
+    <div class="container_1">
+        <div class="colocacion">
+            <h1 class="Title">A simple bookmark manager</h1>
+            <p class="Expl">A clean and simple interface to organize your favourite websites. Open a new 
+                browser tab and see your sites load instantly. Try it for free.
+            </p>
+            <button class="botones btn_3">Get it on Chrome</button>
+            <button class="botones btn_2">Get it on Firefox</button>
+        </div>
+
+
+
+        <!-- imagen De la Primera Sección -->
+        <div class="Primera">
+            <img src="../images/illustration-hero.svg " class="img-fluid rounded-start fondoImg" alt="hero">
+            <div class="background"></div>
+        </div>
+    </div>
+
+
+
+    <!-- Características -->
+
+    <div class="colocacion_1" id="f">
+        <h3 class="Tittle" >Features</h3>
+        <p class="Expl">Our aim is to make it quick and easy for you to access your favourite websites. 
+  Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+    </div>
+    <ul class="nav justify-content-center" id="navB">
+        <li class="nav-item">
+            <a class="btnselect" id="svg_1" onclick="change(svg1, idSvg1,a1)">Simple Bookmarking</a>
+        </li>
+        <li class="nav-item">
+            <a class="btnselect" id="svg_2" onclick="change(svg2, idSvg2,a2)">Speedy Searching</a>
+        </li>
+        <li class="nav-item">
+            <a class="btnselect" id="svg_3" onclick="change(svg3, idSvg3,a3)">Easy Sharing</a>
+        </li>
+    </ul>
+
+
+    <!--Informations-->
+    <div class="container_1">
+
+        <!-- Segunda Imagen-->
+        <div class="Primera_2" id="Paralelo">
+            
+
+
+        </div>
+        <div class="colocacion" id="colacion">
+            <h1 class="">Bookmark in one click</h1>
+            <p class="Expl">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                gives you complete control over how you manage your favourite sites.
+             </p>
+
+            <button class="botones btn_3">More Info</button> 
+            
+
+        </div>
+    </div>
+
+    <!-- Downloads-->
+
+    <div class="colocacion_1" id="p">
+        <h3 class="Title">Download the extension</h3>
+        <p class="Expl">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+            got a favourite you’d like us to prioritize.
+        </p>
+    </div>
+    <div class="cartas">
+        <div class="card " style="width: 16rem;">
+            <img src="..//images/logo-chrome.svg" class="card-img-top w-50 imgNW" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Add to Chrome title</h5>
+                <p class="Expl">Minimun version 62</p>
+                <hr class="hrNW">
+                <button class="botones btn_3">Add & Install Extension</button>
+            </div>
+        </div>
+        <div class="card " style="width: 16rem;">
+            <img src="..//images/logo-firefox.svg" class="card-img-top w-50 imgNW" alt="...">
+            <div class="card-body">
+                <h5 class="Title">Add to firefox</h5>
+                <p class="Expl">Minimun version 55</p>
+                <hr class="hrNW">
+                <button class="botones btn_3">Add & Install Extension</button>
+
+            </div>
+        </div>
+        <div class="card " style="width: 16rem; padding: 10px;">
+            <img src="..//images/logo-opera.svg" class="card-img-top w-50 imgNW" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Add to Opera</h5>
+                <p class="Expl">Minimun version 46</p>
+                <hr class="hrNW">
+                <button class="botones btn_3">Add & Install Extension</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Frequently Questions-->
+    <div class="colocacion_1">
+        <h3 class="Title">Frequently Asked Questions </h3>
+        <p class="Expl">Here are some of our FAQs. If you have any other questions you’d like 
+            answered please feel free to email us.
+        </p>
+        <form action="">
+
+            <select class="select">
+                <option selected>What is Bookmark?</option>
+                <option value="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+            </select>
+            <select class="select">
+                <option selected>How can I request a new browser?</option>
+                <option value="1">Vivamus luctus eros aliquet convallis ultricies.</option>
+            </select>
+            <select class="select">
+                <option selected>Is there a mobile app?</option>
+                <option value="1">Sed consectetur quam id neque fermentum accumsan.</option>
+            </select>
+            <select class="select">
+                <option selected>What about other Chromium browsers?</option>
+                <option value="1">Integer condimentum ipsum id imperdiet finibus.</option>
+            </select>
+        </form>
+        <button class="botones btn_3"  id="more">More Info</button>
+    </div>
+
+    <!-- MODAL -->
+    <div class="gitModal d-flex justify-content-center" id="modal"></div>
+
+    <!-- form -->
+
+    <div class="contactus" id="c">
+        <div class="contactus_1">
+
+            <p>35,000+ already joined</p>
+            <h3>Stay up-to-date with what we’re doing</h3>
+            <form action="" class="f" id="form">
+                <input type="email" id="email" class="email" placeholder="example@gmail.com" required>
+                <button type="submit" class="btn_4">Contact Us</button>
+            </form>
+        
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <ul class="nav " id="col">
+                <li class="nav-item">
+                    <img src="./images/logo-bookmark.svg" alt="logo bookmark con el nombre" id="imglog"/>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#f" id="b1">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#p" id="b2">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#c" id="b3">CONTACT</a>
+                </li>
+            </ul>
+            <ul class="nav" id="col2">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/Daaluempresa" id="b4"><img src="../images/icon-facebook.svg" alt=""></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/?lang=es" id="b5"><img src="../images/icon-twitter.svg" alt=""></a>
+                </li>
+
+                
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./Scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+
+</html>
